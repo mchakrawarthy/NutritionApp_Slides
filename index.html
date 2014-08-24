@@ -1,29 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset='utf-8'>
-	<title>Nutrition Application using USDA Data</title>
-	<meta name="description" content="Nutrition Application using USDA Data">
-	<meta name="author" content="Chakri Matta">
-	<meta name="generator" content="slidify" />
-	
-	<!-- LOAD STYLE SHEETS -->
-	<link rel="stylesheet" href="libraries/frameworks/html5slides/default/styles.css">
-	<link rel="stylesheet" href="libraries/highlighters/highlight.js/css/solarized_light.css" />  <link rel="stylesheet" href = "libraries/widgets/interactive/css/aceeditor.css">
-<link rel="stylesheet" href = "assets/css/ribbons.css">
+  <title>Nutrition Application using USDA Data</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Nutrition Application using USDA Data">
+  <meta name="author" content="Chakri Matta">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="libraries/widgets/interactive/css/aceeditor.css"></link>
+<link rel=stylesheet href="libraries/widgets/nvd3/css/nv.d3.css"></link>
+<link rel=stylesheet href="libraries/widgets/nvd3/css/rNVD3.css"></link>
+<link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
   
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  <script src="libraries/widgets/nvd3/js/jquery-1.8.2.min.js"></script>
+<script src="libraries/widgets/nvd3/js/d3.v3.min.js"></script>
+<script src="libraries/widgets/nvd3/js/nv.d3.min-new.js"></script>
+<script src="libraries/widgets/nvd3/js/fisheye.js"></script>
+
+
 </head>
-<body style='display: none'>
-	<section class='slides layout-regular template-regular'>
-     <article class="" id="slide-1" style="background:;">
-  <h3>Mission</h3>
-  <p>We experiencing epidemic rates of overweight and obesity, the online resources and tools can empower people to make healthier food choices for themselves, their families, and their children. This application attempts to help identify unhealthy food easily so that we can make better food choices. The data for this application is sourced from USDA National Nutrient Database <a href="http://www.ars.usda.gov/Services/docs.htm?docid=8964">http://www.ars.usda.gov/Services/docs.htm?docid=8964</a></p>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Nutrition Application using USDA Data</h1>
+    <h2>Course Project</h2>
+    <p>Chakri Matta<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
 
-</article>
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Mission</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>We experiencing epidemic rates of overweight and obesity, the online resources and tools can empower people to make healthier food choices for themselves, their families, and their children. This application attempts to help identify unhealthy food easily so that we can make better food choices. The data for this application is sourced from USDA National Nutrient Database <a href="http://www.ars.usda.gov/Services/docs.htm?docid=8964">http://www.ars.usda.gov/Services/docs.htm?docid=8964</a></p>
 
-<article class="class" id="id" style="background:;">
-  <h3>Features</h3>
-  <p>Find nutrient information on over 8,000 foods easily using Nutrition Facts.All data are based on the latest USDA data, SR26. It includes more than 15 nutrition values for most food items. Standard measures (ounces, cups, spoons, etc) for each food makes it easy to understand. Detailed classifications of food items for an even more accurate search.</p>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Features</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Find nutrient information on over 8,000 foods easily using Nutrition Facts.All data are based on the latest USDA data, SR26. It includes more than 15 nutrition values for most food items. Standard measures (ounces, cups, spoons, etc) for each food makes it easy to understand. Detailed classifications of food items for an even more accurate search.</p>
 
 <ol>
 <li>Search our database of over 8000 foods by food name or food group. All indexed food is directly from the USDA.</li>
@@ -33,30 +74,215 @@
 <li>You can use the Data tab to easily review all the data in our database and search based on any column.</li>
 </ol>
 
-</article>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
 
-<article class="class" id="id" style="background:;">
-  <h3>Explore Food Items</h3>
-  <p><img style='margin-top: -10px' class="center" src='assets/img/ExploreFood.jpg' width=960px height=400px></img> </p>
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Explore Food Items</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img style='margin-top: -10px' class="center" src='assets/img/ExploreFood.jpg' width=960px height=400px></img> </p>
 
-</article>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
 
-<h2>About Data</h2>
-<p>Number for food items included in the data are 8463.
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>About Data</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Number for food items included in the data are 8463.
 Following are counts by food groups.</p>
 
-  </section>
+<div style='float:left;width:48%;' class='centered'>
+  <table><thead>
+<tr>
+<th align="left">fdGrp.Desc</th>
+<th align="right">count</th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="left">American Indian/Alaska Native Foods</td>
+<td align="right">165</td>
+</tr>
+<tr>
+<td align="left">Baby Foods</td>
+<td align="right">362</td>
+</tr>
+<tr>
+<td align="left">Baked Products</td>
+<td align="right">807</td>
+</tr>
+<tr>
+<td align="left">Beef Products</td>
+<td align="right">864</td>
+</tr>
+<tr>
+<td align="left">Beverages</td>
+<td align="right">312</td>
+</tr>
+<tr>
+<td align="left">Breakfast Cereals</td>
+<td align="right">354</td>
+</tr>
+<tr>
+<td align="left">Cereal Grains and Pasta</td>
+<td align="right">182</td>
+</tr>
+<tr>
+<td align="left">Dairy and Egg Products</td>
+<td align="right">258</td>
+</tr>
+<tr>
+<td align="left">Fast Foods</td>
+<td align="right">388</td>
+</tr>
+<tr>
+<td align="left">Fats and Oils</td>
+<td align="right">219</td>
+</tr>
+<tr>
+<td align="left">Finfish and Shellfish Products</td>
+<td align="right">267</td>
+</tr>
+<tr>
+<td align="left">Fruits and Fruit Juices</td>
+<td align="right">335</td>
+</tr>
+<tr>
+<td align="left">Lamb, Veal, and Game Products</td>
+<td align="right">353</td>
+</tr>
+</tbody></table>
+
+</div>
+<div style='float:right;width:48%;'>
+  <table><thead>
+<tr>
+<th align="left"></th>
+<th align="left">fdGrp.Desc</th>
+<th align="right">count</th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="left">14</td>
+<td align="left">Legumes and Legume Products</td>
+<td align="right">385</td>
+</tr>
+<tr>
+<td align="left">15</td>
+<td align="left">Meals, Entrees, and Side Dishes</td>
+<td align="right">108</td>
+</tr>
+<tr>
+<td align="left">16</td>
+<td align="left">Nut and Seed Products</td>
+<td align="right">131</td>
+</tr>
+<tr>
+<td align="left">17</td>
+<td align="left">Pork Products</td>
+<td align="right">337</td>
+</tr>
+<tr>
+<td align="left">18</td>
+<td align="left">Poultry Products</td>
+<td align="right">389</td>
+</tr>
+<tr>
+<td align="left">19</td>
+<td align="left">Restaurant Foods</td>
+<td align="right">82</td>
+</tr>
+<tr>
+<td align="left">20</td>
+<td align="left">Sausages and Luncheon Meats</td>
+<td align="right">243</td>
+</tr>
+<tr>
+<td align="left">21</td>
+<td align="left">Snacks</td>
+<td align="right">172</td>
+</tr>
+<tr>
+<td align="left">22</td>
+<td align="left">Soups, Sauces, and Gravies</td>
+<td align="right">511</td>
+</tr>
+<tr>
+<td align="left">23</td>
+<td align="left">Spices and Herbs</td>
+<td align="right">64</td>
+</tr>
+<tr>
+<td align="left">24</td>
+<td align="left">Sweets</td>
+<td align="right">347</td>
+</tr>
+<tr>
+<td align="left">25</td>
+<td align="left">Vegetables and Vegetable Products</td>
+<td align="right">828</td>
+</tr>
+</tbody></table>
+
+</div>
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Mission'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Features'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Explore Food Items'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='About Data'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
 </body>
-  <!-- LOAD JAVASCRIPTS  -->
-	<script src='libraries/frameworks/html5slides/default/slides.js'></script>
-	<script src="shared/shiny.js" type="text/javascript"></script>
-	<script src="shared/slider/js/jquery.slider.min.js"></script>
-	<script src="shared/bootstrap/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="shared/slider/css/jquery.slider.min.css"></link>
-	
-	<!-- LOAD HIGHLIGHTER JS FILES -->
-	<script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
-	<script>hljs.initHighlightingOnLoad();</script>
-	<!-- DONE LOADING HIGHLIGHTER JS FILES -->
-	 
-	</html>
+  <!-- Load Javascripts for Widgets -->
+  <script src="libraries/widgets/interactive/js/ace/js/ace.js"></script>
+<script src="libraries/widgets/interactive/js/opencpu-0.5.js"></script>
+<script src="libraries/widgets/interactive/js/interactive.js"></script>
+
+  <script src="shared/shiny.js" type="text/javascript"></script>
+  <script src="shared/slider/js/jquery.slider.min.js"></script>
+  <script src="shared/bootstrap/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="shared/slider/css/jquery.slider.min.css"></link>
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>

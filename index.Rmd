@@ -3,9 +3,9 @@ title       : Nutrition Application using USDA Data
 subtitle    : Course Project
 author      : Chakri Matta
 job         : 
-framework   : html5slides       # {io2012, html5slides, shower, dzslides, ...}
+framework   : io2012       # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
-hitheme     : solarized_light     # 
+hitheme     : tomorrow     # 
 widgets     : [shiny, interactive]            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
